@@ -10,8 +10,8 @@ export const Left = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
     cursor: pointer;
+    margin-left:2.5rem
 `
 export const Middle = styled.div`
      text-align:center;
