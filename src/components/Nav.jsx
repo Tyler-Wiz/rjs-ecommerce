@@ -4,6 +4,7 @@ import { NavData } from "../Data/Data"
 import { Toggle } from "../utilities/Toggle"
 import * as FiIcons from 'react-icons/fi'
 import * as VscIcons from 'react-icons/vsc'
+import * as GrIcons from 'react-icons/gr'
 
 export const Nav = () => {
     const [IsOpen, openElement] = Toggle()
@@ -19,19 +20,21 @@ export const Nav = () => {
             <ul>
                 {NavData.map((item, i) => (
                     <li key={i}>
-                        <LinkWrapper>
+                        <LinkWrapper >
                             <Left>
-                                <Link href="/">{item.name}</Link> 
+                                <Link onClick={() => {setSelected(item.id); setOpenSub(!openSub);}}>{item.name}</Link> 
                                 {selected === item.id && openSub === true ? 
                                 <SubLink subMenu={openSub}>
                                     <a href='/'>{item.linkOne}</a>
                                     <a href='/'>{item.linkTwo}</a>
                                     <a href='/'>{item.linkThree}</a>
+                                    <a href='/'>{item.linkFour}</a>
+                                    <a href='/'>{item.linkFive}</a>
                                 </SubLink> 
                                 : "" }
                             </Left>
                             <Right onClick={() => {setSelected(item.id); setOpenSub(!openSub);}}>
-                                <p>{item.icon}</p>
+                               {selected === item.id && openSub === true ? <GrIcons.GrFormDown size={30}/> : <GrIcons.GrFormNext size={30}/> }
                             </Right>
                         </LinkWrapper>
                     </li>

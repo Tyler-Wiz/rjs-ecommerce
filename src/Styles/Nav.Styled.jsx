@@ -23,6 +23,8 @@ export const Container = styled.nav`
 export const LinkWrapper = styled.div`
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+
 `
 
 export const Link = styled.a`
@@ -31,6 +33,7 @@ export const Link = styled.a`
         color: black;
         font-weight:600;
         text-transform: capitalize;
+        
 `
 
 export const Right = styled.div`
@@ -43,22 +46,22 @@ export const HamburgerIcon = styled.div`
 
     span {
         position: absolute;
-    }
+     }
 `
 export const SubLink = styled.div`
-    width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
     display: ${({subMenu}) => subMenu ? 'flex' : 'none'};
+    margin-top:2rem;
     
     a{
         text-decoration:none;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: black;
         font-weight:300;
         text-transform: capitalize;
-        padding: 1rem;
+        padding: 1.5rem;
         opacity: ${({subMenu}) => subMenu ? '1' : '0'};
         
     }
