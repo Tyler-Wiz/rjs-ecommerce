@@ -1,9 +1,19 @@
-import React from 'react'
+import { PopularData } from '../Data/Data'
+import { Container, Wrapper, ImageContainer, Image } from '../Styles/Popular.Styled'
 
 export const Popular = () => {
     return (
-        <div>
-            <p>popular brands</p>
-        </div>
+        <Container>
+            <h3>Popular Brands</h3>
+            <Wrapper>
+                {PopularData.map((item, i) => (
+                    <li key={i}>
+                        <ImageContainer>
+                            <Image src={item.img} alt=""/>
+                        </ImageContainer>   
+                    </li>
+                ))}
+            </Wrapper>
+        </Container>
     )
 }

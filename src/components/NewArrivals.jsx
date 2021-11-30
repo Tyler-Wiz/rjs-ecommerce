@@ -1,33 +1,22 @@
-import { useState } from 'react'
-import { ProductData } from '../Data/Data'
+import { NewArrivalData } from '../Data/Data'
 import * as AiIcons from 'react-icons/ai'
 import { 
     Container, Wrapper, 
-    ProductIcons, ExpandImage , 
+    ProductIcons, 
     ImgContainer, Image, 
     ProductInfo, Button, Color, ColorWrapper } from '../Styles/Products.styled'
 
 
-export const Product = () => {
-    const [open, setOpen] = useState(false)
-    const [expand, setExpand] = useState(0)
-
+export const NewArrivals = () => {
     return (
         <Container>
-          <h3>Weekly BestSellers</h3>
+          <h3>New Arrivals</h3>
           <Wrapper>
-              {ProductData.map((item, i) => (
+              {NewArrivalData.map((item, i) => (
                   <div key={i}>
                       <ProductIcons>
-                        <AiIcons.AiOutlinePlusCircle size={20}
-                          onMouseOver={() => {setExpand(item.id); setOpen(!open)}} 
-                          onMouseLeave={() => {setExpand(0); setOpen(false)}} 
-                        />
                         <AiIcons.AiOutlineHeart size={20}/>
                       </ProductIcons>
-                      {expand === item.id & open ? <ExpandImage>
-                          <img src={item.expandImg} alt="" />
-                      </ExpandImage> : ''}
                       <ImgContainer>
                         <Image src={item.Img} alt="" />
                       </ImgContainer>
@@ -37,9 +26,9 @@ export const Product = () => {
                         <p>{item.name}</p>
                         <p>{item.price}</p>
                          <ColorWrapper>
-                             <Color bg='brown'></Color>
-                             <Color bg='green'></Color> 
-                             <Color bg='grey'></Color>
+                             <Color bg='pink'></Color>
+                             <Color bg='red'></Color> 
+                             <Color bg='orange'></Color>
                          </ColorWrapper>
                       </ProductInfo> 
 
