@@ -1,8 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.section`
-    width: 100%;
-    height: 5vh;
+    padding: 1.5rem;
     background-color:black;
     display: flex;
     justify-content: center;
@@ -10,7 +9,7 @@ export const Container = styled.section`
     color: white;
 `
 export const Title = styled.h4`
-    font-size:1.5rem;
+    font-size:1.3rem;
     text-transform:capitalize;
     font-weight:400;
 `
