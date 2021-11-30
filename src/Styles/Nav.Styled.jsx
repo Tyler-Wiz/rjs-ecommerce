@@ -41,7 +41,7 @@ export const Right = styled.div`
 `
 export const HamburgerIcon = styled.div`
     position: absolute;
-    top: 6.5%;
+    top: 7.5%;
     cursor: pointer;
 
     span {
