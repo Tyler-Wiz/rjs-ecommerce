@@ -16,10 +16,11 @@ export const Wrapper = styled.ul`
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 `
 
 export const ImageContainer = styled.div`
-    width:8rem;
+    width:10rem;
     padding: 1.3rem;
 `
 

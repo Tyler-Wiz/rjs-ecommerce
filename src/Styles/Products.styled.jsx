@@ -1,14 +1,11 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-    width: 90vw;
+    width: 95%;
     text-transform: capitalize;
     padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     position: relative;
+    margin: 0 auto;
 
     h3{
         text-align:center;
@@ -29,11 +26,10 @@ export const ImgContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
 `
 
 export const Image = styled.img`
-    width: 70%;
+    width: 80%;
 `
 
 export const ProductInfo = styled.div`
