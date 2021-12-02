@@ -1,5 +1,5 @@
 import { PopularData } from '../Data/Data'
-import { Container, Wrapper, ImageContainer, Image } from '../Styles/Popular.Styled'
+import { Container, Wrapper, ImageContainer, Image, } from '../Styles/Popular.Styled'
 
 export const Popular = () => {
     return (

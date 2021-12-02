@@ -4,6 +4,7 @@ export const Container = styled.section`
     width: 90%;
     padding: 1rem;
     margin: 3rem auto;
+    position: relative;
     
     h3{
         text-align: center;
@@ -12,16 +13,19 @@ export const Container = styled.section`
     }
 `
 export const Wrapper = styled.ul`
+    width: 90%;
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin: 0 auto;
+    
 `
 
 export const ImageContainer = styled.div`
-    width:10rem;
-    padding: 1.3rem;
+    width:9rem;
+    padding: 1rem;
 `
 
 export const Image = styled.img`

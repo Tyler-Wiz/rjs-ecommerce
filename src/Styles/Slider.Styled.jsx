@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     position: relative;
-    height: 30vh;
+    height: 40vh;
     max-width: 100vw;
     display: flex;
     overflow: hidden;
@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
 `
 export const Slide = styled.div`
    width: 100vw;
-   height: 30vh;
+   height: 40vh;
    display: flex;
    align-items: center;
    background-color: #${props => props.bg};
@@ -39,7 +39,7 @@ export const ImgContainer = styled.div`
     width: 30%;
 `
 export const InfoContainer = styled.div`
-    width: 75%;
+    width: 70%;
     margin-left:5rem;
     display: flex;
     align-items: flex-start;
