@@ -10,8 +10,8 @@ export const Container = styled.div`
 export const Arrow = styled.div`
     position: absolute;
     top: 50%;
-    right:${props => props.direction === 'right' && '.5rem'};
-    left: ${props => props.direction === 'left' && '.5rem'};
+    right:${props => props.direction === 'right' && '1.5rem'};
+    left: ${props => props.direction === 'left' && '1.5rem'};
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 2;
